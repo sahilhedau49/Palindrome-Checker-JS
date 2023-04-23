@@ -9,6 +9,7 @@
 }
 
 body {
+  display: flex;
   background: linear-gradient(
     45deg,
     rgb(187, 255, 61),
@@ -17,6 +18,8 @@ body {
     rgb(51, 241, 255)
   );
   min-height: 100vh;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .main {
@@ -26,8 +29,52 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
-  background: transparent;
-  backdrop-filter: blur(100);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.head h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.input h3 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.input input {
+  padding: 8px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  outline: none;
   border: 2px solid #000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+.result-div button {
+  padding: 8px;
+  outline: none;
+  border: 2px solid #000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 8rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+.result-div h3 {
+  text-align: center;
+  margin-top: 2rem;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 20px;
 }
